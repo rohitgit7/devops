@@ -1,0 +1,166 @@
+    1  whoami
+    2  yum install httpd -y
+    3  clear
+    4  pwd
+    5  sudo ec2-user
+    6  exit
+    7  pwd
+    8  whoami
+    9  cd ~
+   10  cd /opt
+   11  ls
+   12  ls
+   13  mkdir -p ansible-demo
+   14  ls
+   15  cd ansible-demo/
+   16  ls
+   17  hostname
+   18  yum install git -y
+   19  cd ..
+   20  ls
+   21  git status
+   22  ls
+   23  git clone git@github.com:rohitgit7/devops.git
+   24  ls
+   25  ls ansible-demo/
+   26  cd devops
+   27  mkdir devops
+   28  ls
+   29  cd devops/
+   30  ls
+   31  pwd
+   32  git clone git@github.com:rohitgit7/devops.git
+   33  cd ..
+   34  ls
+   35  rm devops/
+   36  ls
+   37  rm -f devops/
+   38  rm -r devops/
+   39  ls
+   40  git clone git@github.com:rohitgit7/devops.git
+   41  git clone https://github.com/rohitgit7/devops.git
+   42  ls
+   43  cd devops
+   44  ls
+   45  ls
+   46  cd ..
+   47  mv ansible-demo/ devops/
+   48  ls
+   49  cd devops
+   50  ls
+   51  ls
+   52  tree
+   53  yum install tree -y
+   54  tree
+   55  cd ..
+   56  tree
+   57  ls
+   58  pwd
+   59  cd ..
+   60  ls
+   61  cd opt
+   62  pwd
+   63  ls
+   64  tree
+   65  ls
+   66  cd devops
+   67  ls
+   68  git mkdir gitdemo
+   69  mkdir gitdemo
+   70  git commit -m "gitdemo created
+""
+
+
+
+   71  "git commit -m "gitdemo created"
+   72  git commit -m "gitdemo created"
+   73  ls
+   74  git push
+   75  git init
+   76  ls
+   77  git push
+   78  ls
+   79  git add -A
+   80  git commit -m "gitdemo created"
+   81  git add -a
+   82  git add --all
+   83  git commit
+   84  git push
+   85  ls
+   86  cd /etc/yum.repos.d
+   87  ls
+   88  vi ansible.repo
+   89  yum update
+   90  rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   91  ls
+   92  ls -l
+   93  date
+   94  yum -y install ansible
+   95  ansible --version
+   96  yum repolist
+   97  pwd
+   98  ls -l
+   99  cd /etc
+  100  ls-l
+  101  ls -l
+  102  ll
+  103  cd ansible
+  104  ls
+  105  ls -l
+  106  ls roles
+  107  ls
+  108  ls roles
+  109  cat hosts
+  110  yum update ansible
+  111  ls
+  112  less hosts
+  113  ls
+  114  less ansible.cfg 
+  115  ls
+  116  vi hosts
+  117  pwd
+  118  popd ~
+  119  pushd 
+  120  pushd ~
+  121  l
+  122  ls
+  123  ls --la
+  124  ls -la
+  125  cd .ssh
+  126  ls
+  127  ls -l
+  128  cat authorized_keys 
+  129  ls -l
+  130  cd /root/.ssh
+  131  ls
+  132  popd
+  133  pwd
+  134  ls -l
+  135  vi hosts 
+  136  pushd /root/.ssh
+  137  ls -l
+  138  ls -la
+  139  vi server1.pem
+  140  cat server1.pem 
+  141  ssh -i server1.pem ec2-user@172.31.28.150
+  142  whoami
+  143  ls -l
+  144  chmod 600 server1.pem 
+  145  ls -l
+  146  ssh -i server1.pem ec2-user@172.31.28.150
+  147  ls
+  148  ansible all -m raw -a 'sudo uptime'
+  149  ansible all -m raw -a 'who'
+  150  ansible all -m raw -a 'sudo who'
+  151  ansible all -m raw -a 'uptime'
+  152  ansible all -m raw -a 'ls'
+  153  ansible all -m raw -a 'sudo ls'
+  154  ansible all -m raw -a 'sudo ifconfig'
+  155  ansible all -m raw -a 'hostname'
+  156  ls
+  157  cat authorized_keys 
+  158  history
+  159  ls 
+  160  ~ls ~
+  161  ls ~
+  162  history > ~/ansible_installation.txt
