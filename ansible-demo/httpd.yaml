@@ -1,0 +1,8 @@
+---
+- hosts: all  #Inventory group in /etc/ansible/hosts file
+  user: ec2-user
+  sudo: true
+
+  tasks:
+    - name: Install web server
+      yum: pkg=httpd state=installed
