@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  tasks:
+    - debug:
+        msg="Population of Mumbai is {{lookup('csvfile', 'Mumbai file=city-data.csv delimiter=, col=2')}}"
+
+    - set_fact:
+        printLine: "Population of Mumbai is {{lookup('csvfile', 'Mumbai file=city-data.csv delimiter=, col=2')}}"
+
+    - debug: var=printLine
+
+    - lineinfile:
+        path: /opt/ansible/myfile.txt
+        state: present
+        line: "{{ printLine }}"
+        create: TRUE
+        become: TRUE
