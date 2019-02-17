@@ -1,5 +1,5 @@
 ---
-- hosts: all  #Inventory group name from ansible/hosts file
+- hosts: aws  #Inventory group name from ansible/hosts file
   user: ec2-user
   sudo: true
 

@@ -1,0 +1,20 @@
+---
+- name: Play1
+  hosts: aws
+  
+  vars_prompt:
+    - name: var1
+      prompt: Enter any value
+
+  vars:
+    - my_content: "This is copied from ansible controller - made changes"
+   
+  tasks:
+    - name: This will print variable
+      debug:
+        msg: "The value of variable is {{ var1 }}"
+    - name: copy file
+      copy:	#module
+        dest: /tmp/varfile.txt
+        content: "{{ my_content }}"
+    - debug: msg="the value of varfile.txt is {{lookup('file', '/tmp/varfile.txt') }}"
